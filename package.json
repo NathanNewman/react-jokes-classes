@@ -1,6 +1,7 @@
 {
   "name": "icanhazdadjokes",
   "version": "0.1.0",
+  "homepage": "https://gitname.github.io/jokes",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
@@ -15,6 +16,8 @@
     "react-spinners": "^0.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -34,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
