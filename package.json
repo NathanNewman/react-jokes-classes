@@ -1,7 +1,7 @@
 {
   "name": "icanhazdadjokes",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/react-jokes-classes",
+  "homepage": "https://NathanNewman.github.io/react-jokes-classes",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
@@ -19,7 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

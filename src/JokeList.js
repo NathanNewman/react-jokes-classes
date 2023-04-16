@@ -4,8 +4,8 @@ import Joke from "./Joke";
 import "./JokeList.css";
 
 class JokeList extends Component {
-  constructor({numJokesToGet = 10,...rest}) {
-    super({numJokesToGet,...rest});
+  constructor(props) {
+    super(props);
     this.state = {
       jokes: [],
     }; // Initialize state with an empty array to store jokes
@@ -57,7 +57,6 @@ class JokeList extends Component {
   }
 
   render() {
-    console.log(this.state);
     if (this.state.jokes.length) {
       // Check if there are jokes in state to render
       let sortedJokes = [...this.state.jokes].sort((a, b) => b.votes - a.votes); // Sort the jokes array in descending order based on vote count
@@ -84,6 +83,11 @@ class JokeList extends Component {
     return null;
   }
 }
+
+// Set default props using static defaultProps property
+JokeList.defaultProps = {
+  numJokesToGet: 10, // Set default value for numJokesToGet
+};
 
 export default JokeList;
 

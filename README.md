@@ -1,5 +1,2 @@
-### Initialization
-
-```
-npm install && npm start
-```
+This project is deployed at
+https://nathannewman.github.io/react-jokes-classes/
